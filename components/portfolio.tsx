@@ -60,7 +60,7 @@ const Portfolio = () => {
       {/* Header */}
       <header className="absolute top-0 left-0 right-0 z-50 bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center mb-0">
-          <div className="text-3xl font-bold">sg.</div>
+          <div className="text-3xl font-bold">sg<span className='text-red-500 text-4xl font-bold'>.</span></div>
           
           <Link href="/connect">
           <button className="bg-black text-white px-6 py-2  cursor-pointer">
@@ -75,13 +75,13 @@ const Portfolio = () => {
       <section className="min-h-screen flex flex-col items-center justify-center px-8 ">
         <div className="max-w-5xl text-center space-y-8">
           <h1 className="text-6xl md:text-7xl font-bold tracking-tight">
-            SRINJOY GHOSH.
+            SRINJOY GHOSH<span className='text-red-500 text-6xl md:text-7xl font-bold'>.</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-600 tracking-widest uppercase">
-            Artificial Intelligence, Blockchain, Software Engineering, Networks, Automation Programming, Open Source Contributions.
+            Artificial Intelligence, Blockchain, Software Engineering, Computer Networks, Automated Programming, Open Source Contributions
           </p>
-          <p className="text-lg text-gray-700 pt-2">
-            Learning Rust & Solana
+          <p className={`text-lg text-gray-700 pt-2`}>
+            Learning Rust and Solana, Building Low Level Systems
           </p>
         </div>
         

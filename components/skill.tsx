@@ -27,7 +27,7 @@ const SkillsSection: React.FC = () => {
               <h3 className="text-xl font-semibold text-gray-900 mb-3">{skill.category}</h3>
               <div className="flex flex-wrap gap-3">
                 {skill.items.map((item, i) => (
-                  <span key={i} className="bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded-full border border-gray-200">
+                  <span key={i} className="bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded border border-gray-200">
                     {item}
                   </span>
                 ))}

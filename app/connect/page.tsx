@@ -4,10 +4,10 @@ import type { NextPage } from "next";
 const links = [
   { name: "Home", url: "/" },
   { name: "Resume", url: "/resume" },
-  { name: "LinkedIn", url: "https://www.linkedin.com" },
-  { name: "Github", url: "https://github.com" },
-  { name: "Instagram", url: "https://www.instagram.com" },
-  { name: "X", url: "https://twitter.com" },
+  { name: "LinkedIn", url: "https://www.linkedin.com/in/srinjoy-ghosh-97a9852a4/" },
+  { name: "Github", url: "https://github.com/sgcodes7471" },
+  { name: "Instagram", url: "https://www.instagram.com/" },
+  { name: "X", url: "https://twitter.com/" },
 ];
 
 const Home: NextPage = () => {
