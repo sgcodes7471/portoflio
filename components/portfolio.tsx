@@ -22,37 +22,37 @@ const Portfolio = () => {
       title: "Carbon X",
       description: "A decentralized platform for tracking energy usage and enabling peer-to-peer energy trading supporting real-time trade broadcasting, secure order matching, and privacy-preserving transactions, with verified identities using NFTs as decentralized identifiers.",
       tags: ["# blockchain", "# microcontroller", "# defi"],
-      link: "#"
+      link: "https://github.com/sgcodes7471/carbon-x"
     },
     {
       title: "Dream",
       description: "A platform that predicts and recommends optimal fantasy cricket teams using a Gradient Boosting Machine, provides detailed performance analysis with interactive visualizations, delivers automated email updates, and generates AI-driven commentary on matches.",
       tags: ["# generative-ai", "# gradient-boost", "# etl"],
-      link: "#"
+      link: "https://github.com/D11-MP/Dream11-prototype"
     },
     {
       title: "ThreeTube",
       description: "A platform on ethereum chain for streaming, live broadcasting, and monetizing videos with NFT-based ownership, supporting real-time like updates, interactive viewing, and efficient indexing and querying of on-chain data for seamless user experience.",
       tags: ["# ffmpeg & hls", "# graph-protocol", "# websockets"],
-      link: "#"
+      link: "https://github.com/Dappers24/ThreeTube"
     },
     {
       title: "Make.it",
       description: "A platform that generates complete websites with structured folders using Anthropic AI, supports follow-up prompts for iterative development, includes a file explorer and drag-and-drop component management, and runs live previews in browser.",
       tags: ["# web-conatainers", "# response-parsing", "# llms"],
-      link: "#"
+      link: "https://github.com/sgcodes7471/make.it"
     },
     {
       title: "Custom DBMS",
       description: "A database management system supporting efficient data storage and retrieval with a B+ Tree index, providing insertion, deletion, modification, and search operations through a user-friendly command-line interface, and simulating persistent storage by mapping records to external files.",
       tags: ["# dbms", "# b+ tress", "# oops"],
-      link: "#"
+      link: "https://github.com/sgcodes7471/Custom-DBMS"
     },
     {
       title: "Admin Panel",
       description: "An NPM package that enables the creation of fully functional admin panels for student web committee projects with a single setup, streamlining project management and interface generation.",
       tags: ["# npm-package", "# swc"],
-      link: "#"
+      link: "https://github.com/swciitg/swc_admin_panel"
     }
   ];
 
@@ -102,8 +102,13 @@ const Portfolio = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
-              <div 
+              <a
                 key={index}
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+              <div 
                 className="bg-white cursor-pointer border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
               >
                 <div className="flex items-start gap-3 mb-4">
@@ -124,6 +129,7 @@ const Portfolio = () => {
                   ))}
                 </div>
               </div>
+              </a>
             ))}
           </div>
         </div>

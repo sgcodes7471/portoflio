@@ -7,12 +7,12 @@ interface Skill {
 
 const SkillsSection: React.FC = () => {
   const skills: Skill[] = [
-    { category: "Programming Languages", items: ["Python", "JavaScript", "TypeScript", "C", "C++", "Go", "SQL"] },
-    { category: "AI & Data Science", items: ["Pandas", "NumPy", "Scikit-learn", "Data Analysis", "Supervised Learning", "AI Pipelines"] },
-    { category: "Blockchain", items: ["Solidity", "ZK-SNARKs", "IPFS", "Graph Protocol"] },
-    { category: "Development", items: ["React", "Next.js", "Node.js", "FastAPI", "Flask", "React Native", "Websockets"] },
-    { category: "Tools & Cloud", items: ["Git", "Docker", "AWS", "Supabase", "MongoDB"] },
+    { category: "Programming Languages", items: ["Python", "JavaScript", "TypeScript", "C++", "SQL"] },
     { category: "Computer Fundamentals", items: ["Data Structures & Algorithms", "OOPS", "Networks", "DBMS"] },
+    { category: "Development", items: ["React", "Next.js", "Node.js", "FastAPI", "Flask", "React Native", "Websockets"] },
+    { category: "Blockchain", items: ["Solidity", "ZK-SNARKs", "IPFS", "Graph Protocol"] },
+    { category: "AI & Data Science", items: ["Pandas", "NumPy", "Scikit-learn", "Data Analysis", "Supervised Learning", "AI Pipelines"] },
+    { category: "Tools", items: ["Git", "Docker", "AWS", "Supabase", "MongoDB"] },
   ];
 
   return (
