@@ -42,13 +42,13 @@ const BgSection: React.FC = () => {
 
         <div className="relative border-l border-gray-200 ml-4">
           {works.map((work, index) => (
-            <div key={index} className="mb-10 ml-6">
+            <div key={index} className="mb-12 ml-6">
               <div className="absolute w-3 h-3 bg-gray-300 rounded-full -left-1.5 mt-2.5"></div>
-                <div className="text-2xl font-semibold mb-3">
+                <div className="text-2xl font-semibold mb-2">
                 {work.role}
                 </div>
                  
-                <div className="text-xl font-semibold text-gray-700 mb-3">
+                <div className="text-xl font-semibold text-gray-700 ">
                     {work.company}
                 </div>
               <span

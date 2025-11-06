@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import BgSection from './bg';
 import SkillsSection from './skill';
+import Connect from './connect';
 
 const Portfolio = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -20,7 +21,7 @@ const Portfolio = () => {
     {
       title: "Carbon X",
       description: "A decentralized platform for tracking energy usage and enabling peer-to-peer energy trading supporting real-time trade broadcasting, secure order matching, and privacy-preserving transactions, with verified identities using NFTs as decentralized identifiers.",
-      tags: ["# blockchain", "# microcontroller", "# real-time"],
+      tags: ["# blockchain", "# microcontroller", "# defi"],
       link: "#"
     },
     {
@@ -32,19 +33,19 @@ const Portfolio = () => {
     {
       title: "ThreeTube",
       description: "A platform on ethereum chain for streaming, live broadcasting, and monetizing videos with NFT-based ownership, supporting real-time like updates, interactive viewing, and efficient indexing and querying of on-chain data for seamless user experience.",
-      tags: ["# ffmpeg and hls", "# graph-protocol", "# nfts"],
+      tags: ["# ffmpeg & hls", "# graph-protocol", "# websockets"],
+      link: "#"
+    },
+    {
+      title: "Make.it",
+      description: "A platform that generates complete websites with structured folders using Anthropic AI, supports follow-up prompts for iterative development, includes a file explorer and drag-and-drop component management, and runs live previews in browser.",
+      tags: ["# web-conatainers", "# response-parsing", "# llms"],
       link: "#"
     },
     {
       title: "Custom DBMS",
       description: "A database management system supporting efficient data storage and retrieval with a B+ Tree index, providing insertion, deletion, modification, and search operations through a user-friendly command-line interface, and simulating persistent storage by mapping records to external files.",
       tags: ["# dbms", "# b+ tress", "# oops"],
-      link: "#"
-    },
-    {
-      title: "MagMove",
-      description: "An automated chess platform integrating rasberry pi with server, supporting Player vs Player and Player vs Stockfish matches, with real-time monitoring, move validation, game-ending detection, and handling of network disconnections.",
-      tags: ["# hardware-integration", "# websockets"],
       link: "#"
     },
     {
@@ -62,17 +63,17 @@ const Portfolio = () => {
         <div className="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center mb-0">
           <div className="text-3xl font-bold">sg<span className='text-red-500 text-4xl font-bold'>.</span></div>
           
-          <Link href="/connect">
+          {/* <Link href="/connect">
           <button className="bg-black text-white px-6 py-2  cursor-pointer">
             Connect!
           </button>
-          </Link>
+          </Link> */}
           
         </div>
       </header>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-8 ">
+      <section className="min-h-screen flex flex-col items-center justify-center px-8 mt-4">
         <div className="max-w-5xl text-center space-y-8">
           <h1 className="text-6xl md:text-7xl font-bold tracking-tight">
             SRINJOY GHOSH<span className='text-red-500 text-6xl md:text-7xl font-bold'>.</span>
@@ -80,9 +81,10 @@ const Portfolio = () => {
           <p className="text-lg md:text-xl text-gray-600 tracking-widest uppercase">
             Artificial Intelligence, Blockchain, Software Engineering, Computer Networks, Automated Programming, Open Source Contributions
           </p>
-          <p className={`text-lg text-gray-700 pt-2`}>
+          {/* <p className={`text-lg text-gray-700 pt-2 font-sans`}>
             Learning Rust and Solana, Building Low Level Systems
-          </p>
+          </p> */}
+          <Connect/>
         </div>
         
         
