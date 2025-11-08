@@ -44,7 +44,7 @@ const Portfolio = () => {
     },
     {
       title: "Custom DBMS",
-      description: "A database management system supporting efficient data storage and retrieval with a B+ Tree index, providing insertion, deletion, modification, and search operations through a user-friendly command-line interface, and simulating persistent storage by mapping records to external files.",
+      description: "A database management system supporting efficient data storage and retrieval with a B+ Tree index, providing insertion, deletion, modification, and search operations, and simulating persistent storage by mapping records to external files.",
       tags: ["# dbms", "# b+ tress", "# oops"],
       link: "https://github.com/sgcodes7471/Custom-DBMS"
     },
@@ -90,6 +90,8 @@ const Portfolio = () => {
         
       </section>
 
+
+<BgSection/>
       
 
       {/* Projects Section */}
@@ -148,7 +150,7 @@ const Portfolio = () => {
             
             <SkillsSection/>
 
-            <BgSection/>
+            
 
 
 

@@ -16,7 +16,7 @@ const BgSection: React.FC = () => {
    {
     company : "Indian Institute of Technology, Guwahati", 
     date : "July 2023 - Present",
-    role : "Engineering Undergrad"
+    role : "Engineering Undergraduate"
    },
     {
     company : "Hacktoberfest", 
