@@ -75,15 +75,26 @@ const Portfolio = () => {
       {/* Hero Section */}
       <section className="min-h-screen flex flex-col items-center justify-center px-8 mt-4">
         <div className="max-w-5xl text-center space-y-8">
-          <h1 className="text-6xl md:text-7xl font-bold tracking-tight">
+          <h1 className="text-6xl md:text-7xl font-bold tracking-tight mb-1">
             SRINJOY GHOSH<span className='text-red-500 text-6xl md:text-7xl font-bold'>.</span>
           </h1>
+
+          <p className={`text-lg text-gray-700 font-sans`}>
+            Based in {' '}
+            <span className='font-semibold'>
+              Kolkata, India
+            </span>
+            {' • '}
+            Learning {' '}
+            <span className='font-semibold'>
+              Rust & Solana
+            </span>
+          </p> 
+
           <p className="text-lg md:text-xl text-gray-600 tracking-widest uppercase">
-            Artificial Intelligence, Blockchain, Software Engineering, Computer Networks, Automated Programming, Open Source Contributions
+            Software Engineering, Web2/Web3, Computer Networks, Automated Programming, Open Source Contributions
           </p>
-          {/* <p className={`text-lg text-gray-700 pt-2 font-sans`}>
-            Learning Rust and Solana, Building Low Level Systems
-          </p> */}
+           
           <Connect/>
         </div>
         
@@ -177,8 +188,15 @@ const Portfolio = () => {
                 I'm excited to connect with you all.
               </p>
               <p className="text-xl md:text-2xl text-gray-700 leading-relaxed pt-8">
-                If you have a projects and desire to collaborate with me,{' '}
-                <span className="underline font-medium">I'd love to hear from you</span>.
+                If you have a project and desire to collaborate with me,{' '}
+                <span className="underline font-medium">
+                  <a 
+                  href="mailto:official06srinjoy@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                    I'd love to hear from you
+                  </a>
+                </span>.
               </p>
             </div>
           </div>

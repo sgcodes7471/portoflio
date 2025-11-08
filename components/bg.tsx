@@ -3,7 +3,8 @@ import React from "react";
 interface Skill {
   company : string,
   date : string, 
-  role : string
+  role : string,
+  location : string
 }
 
 const BgSection: React.FC = () => {
@@ -11,22 +12,26 @@ const BgSection: React.FC = () => {
     {
     company : "Zeron", 
     date : "Dec 2025",
-    role : "Upcoming CyberSecurity Engineering Intern"
+    role : "Upcoming Software Engineering Intern",
+    location : "Remote"
    },
    {
     company : "Indian Institute of Technology, Guwahati", 
     date : "July 2023 - Present",
-    role : "Engineering Undergraduate"
+    role : "Engineering Undergraduate",
+    location : "Assam, India"
    },
     {
     company : "Hacktoberfest", 
     date : "Oct 2025",
-    role : "Open Source Contributor"
+    role : "Open Source Contributor",
+    location : "Remote"
    },
    {
     company : "Zeroes Research Labs(AdVise)", 
     date : "May 2025 - Jun 2025",
-    role : "AI Developer Intern"
+    role : "Full Stack Developer Intern",
+    location : "Remote"
    },
    
   ];
@@ -40,7 +45,7 @@ const BgSection: React.FC = () => {
           </h2>
         </div>
 
-        <div className="relative border-l border-gray-200 ml-4">
+        <div className="relative border-l border-gray-200 ml-4 cursor-pointer">
           {works.map((work, index) => (
             <div key={index} className="mb-12 ml-6">
               <div className="absolute w-3 h-3 bg-gray-300 rounded-full -left-1.5 mt-2.5"></div>
@@ -54,7 +59,7 @@ const BgSection: React.FC = () => {
               <span
                     className="text-md font-semibold text-gray-500"
                   >
-                    {work.date}
+                    {work.date} {'\t•\t'} {work.location}
                   </span>
             </div>
           ))}

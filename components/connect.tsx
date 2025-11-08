@@ -16,6 +16,8 @@ const Connect = () => {
                         <a  
                             key={idx}
                             href={link.url} 
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="text-gray-500 px-4 font-medium text-lg md:text-xl font-mono tracking-widest"
                         >
                             {link.name}
