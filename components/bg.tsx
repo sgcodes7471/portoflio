@@ -52,7 +52,7 @@ const BgSection: React.FC = () => {
   }
 
   return (
-    <section className="py-20 px-8 bg-white border-b border-gray-100">
+    <section className="py-20 px-8  border-b border-gray-100">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold tracking-wider mb-16">
