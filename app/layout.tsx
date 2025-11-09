@@ -41,7 +41,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "sg.",
+  title: "Portfolio • Srinjoy Ghosh",
   description: "Portfolio of Srinjoy Ghosh",
 };
 

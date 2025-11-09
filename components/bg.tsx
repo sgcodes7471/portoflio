@@ -1,10 +1,11 @@
-import React from "react";
+import React, { JSX, useState } from "react";
 
 interface Skill {
   company : string,
   date : string, 
   role : string,
-  location : string
+  location : string,
+  details: JSX.Element,
 }
 
 const BgSection: React.FC = () => {
@@ -13,28 +14,42 @@ const BgSection: React.FC = () => {
     company : "Zeron", 
     date : "Dec 2025",
     role : "Upcoming Software Engineering Intern",
-    location : "Remote"
+    location : "Remote",
+    details : <></>
    },
    {
-    company : "Indian Institute of Technology, Guwahati", 
+    company : "Indian Institute of Technology", 
     date : "July 2023 - Present",
     role : "Engineering Undergraduate",
-    location : "Assam, India"
-   },
-    {
-    company : "Hacktoberfest", 
-    date : "Oct 2025",
-    role : "Open Source Contributor",
-    location : "Remote"
+    location : "Guwahati, India",
+    details : <>Took key <b className="text-red-500">Computer Sciences</b> courses of Data Structures, Networks and Database Management Systems while having a major in Chemistry</>
    },
    {
     company : "Zeroes Research Labs(AdVise)", 
     date : "May 2025 - Jun 2025",
     role : "Full Stack Developer Intern",
-    location : "Remote"
+    location : "Remote",
+    details : <>Worked with <b className = "text-red-500">Next.js</b>, <b className = "text-red-500">Python</b> and <b className = "text-red-500">Supabase</b> to make AI Advertisement products</>
    },
-   
+   {
+    company : "Hacktoberfest", 
+    date : "Oct 2025",
+    role : "Open Source Contributor",
+    location : "Remote",
+    details : <>Contributed using <b className = "text-red-500">JavaScript</b>, to build LLM-based content moderation system and a serverless realtime chat feature</>
+   }
   ];
+
+  const [openedSection , setOpenedSection] = useState(-1);
+  
+  const handleOpenSection = (section_id : number) => {
+    if(openedSection == section_id) {
+      setOpenedSection(-1);
+      return;
+    }
+
+    setOpenedSection(section_id);
+  }
 
   return (
     <section className="py-20 px-8 bg-white border-b border-gray-100">
@@ -46,23 +61,40 @@ const BgSection: React.FC = () => {
         </div>
 
         <div className="relative border-l border-gray-200 ml-4 cursor-pointer">
-          {works.map((work, index) => (
-            <div key={index} className="mb-12 ml-6">
-              <div className="absolute w-3 h-3 bg-gray-300 rounded-full -left-1.5 mt-2.5"></div>
-                <div className="text-2xl font-semibold mb-2">
-                {work.role}
-                </div>
-                 
-                <div className="text-xl font-semibold text-gray-700 ">
-                    {work.company}
-                </div>
-              <span
-                    className="text-md font-semibold text-gray-500"
+          {works.map((work, index) => {
+              return(
+                <div 
+                  key={index} 
+                  className="mb-12 ml-6 cursor-pointer" 
+                  onClick={() => handleOpenSection(index)}
                   >
-                    {work.date} {'\t•\t'} {work.location}
-                  </span>
-            </div>
-          ))}
+                  <div className="absolute w-3 h-3 bg-gray-300 rounded-full -left-1.5 mt-2.5"></div>
+                    <div className="text-2xl font-semibold mb-2">
+                      {work.role}
+                      
+                    </div>
+                    
+                    <div className="font-semibold text-gray-700 ">
+                        <span className="text-xl ">{work.company}</span>
+                        <span
+                          className="text-md font-semibold text-gray-500">
+                            {'\t•\t'} {work.location}
+                        </span>
+                    </div>
+                    <span
+                        className="text-md font-semibold text-gray-500"
+                    >
+                      {work.date} 
+                    </span>
+                 
+                    <span className={`block text-gray-600 mt-2 text-md leading-relaxed text-wrap w-1/2 transition-all duration-500 ease-in-out overflow-hidden 
+                      ${openedSection === index ? "max-h-40 opacity-100" : "max-h-0 opacity-100"}`}>
+                      {work.details}
+                    </span>
+                  
+                </div>
+              )
+          })}
         </div>
       </div>
     </section>
