@@ -9,7 +9,7 @@ const Connect = () => {
 
 
     return (
-         <div className="my-4">
+         <div className="my-4 flex flex-col sm:flex-row justify-center align-items">
             {
                 links.map((link , idx) => {
                     return (
@@ -18,7 +18,7 @@ const Connect = () => {
                             href={link.url} 
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-gray-500 px-4 font-medium text-lg md:text-xl font-mono tracking-widest"
+                            className="text-gray-500 px-4 font-medium text-lg md:text-xl  font-mono tracking-widest"
                         >
                             {link.name}
                         </a>

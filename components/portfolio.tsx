@@ -42,7 +42,7 @@ const Portfolio = () => {
     {
       title: "Make.it",
       description: "A platform that generates complete websites with structured folders using Anthropic AI, supports follow-up prompts for iterative development, includes a file explorer and drag-and-drop component management, and runs live previews in browser.",
-      tags: ["# web-conatainers", "# fast-api", "# llms"],
+      tags: ["# web-containers", "# fast-api", "# llms"],
       link: "https://github.com/sgcodes7471/make.it",
       date : ""
     },

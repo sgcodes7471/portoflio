@@ -87,7 +87,7 @@ const BgSection: React.FC = () => {
                       {work.date} 
                     </span>
                  
-                    <span className={`block text-gray-600 mt-2 text-md leading-relaxed text-wrap w-1/2 transition-all duration-500 ease-in-out overflow-hidden 
+                    <span className={`block text-gray-600 mt-2 text-md leading-relaxed text-wrap sm:w-1/2 w-full transition-all duration-500 ease-in-out overflow-hidden 
                       ${openedSection === index ? "max-h-40 opacity-100" : "max-h-0 opacity-100"}`}>
                       {work.details}
                     </span>
