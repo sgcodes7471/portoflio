@@ -7,19 +7,16 @@ import Link from 'next/link';
 import BgSection from './bg';
 import Connect from './connect';
 import BGEffect from './bg_animation';
+import ProjectDialog from './project';
 
 const Portfolio = () => {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  const [projectOpened, setProjectOpened] = useState(-1);
 
   const projects = [
     {
       title: "Carbon X",
+      img : "/projects/carbon.png" ,
+      subtitle : "Decentralized Energy Trading Platform",
       description: "A decentralized platform for tracking energy usage and enabling peer-to-peer energy trading supporting real-time trade broadcasting, secure order matching, and privacy-preserving transactions, with verified identities using NFTs as decentralized identifiers.",
       tags: ["# blockchain", "# microcontroller", "# node", "# redis"],
       link: "https://github.com/sgcodes7471/carbon-x",
@@ -27,27 +24,36 @@ const Portfolio = () => {
     },
     {
       title: "Dream",
+      img : "/projects/dream11.png" ,
+      subtitle : "Fantasy Cricket Team Recommendation System",
       description: "A platform that predicts and recommends optimal fantasy cricket teams using a Gradient Boosting Machine, provides detailed performance analysis with interactive visualizations, delivers automated email updates, and generates AI-driven commentary on matches.",
       tags: ["# generative-ai", "# gradient-boost", "# etl", "# next.js"],
       link: "https://github.com/D11-MP/Dream11-prototype",
       date : ""
     },
     {
-      title: "ThreeTube",
-      description: "A platform on ethereum chain for streaming, live broadcasting, and monetizing videos with NFT-based ownership, supporting real-time like updates, interactive viewing, and efficient indexing and querying of on-chain data for seamless user experience.",
-      tags: ["# ffmpeg & hls", "# react", "# websockets"],
-      link: "https://github.com/Dappers24/ThreeTube",
-      date : ""
-    },
-    {
       title: "Make.it",
+      img : "/projects/make.png" ,
+      subtitle : "AI-based Website Builder",
       description: "A platform that generates complete websites with structured folders using Anthropic AI, supports follow-up prompts for iterative development, includes a file explorer and drag-and-drop component management, and runs live previews in browser.",
       tags: ["# web-containers", "# fast-api", "# llms"],
       link: "https://github.com/sgcodes7471/make.it",
       date : ""
     },
     {
-      title: "Custom DBMS",
+      title: "ThreeTube",
+      img : "/projects/tube.png" ,
+      subtitle : "Ethereum Based Video Streaming WebApp",
+      description: "A platform on ethereum chain for streaming, live broadcasting, and monetizing videos with NFT-based ownership, supporting real-time like updates, interactive viewing, and efficient indexing and querying of on-chain data for seamless user experience.",
+      tags: ["# ffmpeg & hls", "# react", "# websockets"],
+      link: "https://github.com/Dappers24/ThreeTube",
+      date : ""
+    },
+    
+    {
+      title: "Custom Database",
+      img : "/projects/db.png" ,
+      subtitle : "Database on CLI using B+ Trees",
       description: "A database management system supporting efficient data storage and retrieval with a B+ Tree index, providing insertion, deletion, modification, and search operations, and simulating persistent storage by mapping records to external files.",
       tags: ["# dbms", "# b+ trees", "# oops" , "# c++"],
       link: "https://github.com/sgcodes7471/Custom-DBMS",
@@ -55,6 +61,8 @@ const Portfolio = () => {
     },
     {
       title: "Admin Panel",
+      img : "/projects/admin.png" ,
+      subtitle : "Generic Admin Panel Generating Package",
       description: "An NPM package that enables the creation of fully functional admin panels for student web committee projects with a single setup, streamlining project management and interface generation.",
       tags: ["# npm-package", "# swc"],
       link: "https://github.com/swciitg/swc_admin_panel",
@@ -62,8 +70,16 @@ const Portfolio = () => {
     }
   ];
 
+  function closeProjectDailog() {
+    setProjectOpened(-1);
+  }
+
   return (
     <>
+    {
+      projectOpened >= 0 &&
+      <ProjectDialog project={projects[projectOpened]}  close={closeProjectDailog}/>
+    }
     <BGEffect/>
     <div className="min-h-screen  text-gray-900">
       {/* Header */}
@@ -115,22 +131,26 @@ const Portfolio = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
-              <a
-                key={index}
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-              <div 
+              // <a
+              //   key={index}
+              //   href={project.link}
+              //   target="_blank"
+              //   rel="noopener noreferrer">
+              <div key={index} onClick={() => {
+                setProjectOpened(index)
+              }}
                 className="bg-white cursor-pointer border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow"
               >
-                <div className="flex items-start gap-3 mb-4">
+                <div className="flex items-start gap-3 mb-2">
                   <Monitor size={20} className="mt-1 flex-shrink-0" />
                   <h3 className="text-lg font-semibold underline">{project.title}</h3>
                 </div>
-                <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-                  {project.description}
+                <p className="text-gray-700 text-md font-semibold mb-4 leading-relaxed">
+                  {project.subtitle}
                 </p>
+                <div className="mb-4">
+                  <Image src={project.img} alt={project.description} width={400} height={300} className="object-cover rounded-lg relative"/>
+                </div>
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, idx) => (
                     <span 
@@ -142,7 +162,7 @@ const Portfolio = () => {
                   ))}
                 </div>
               </div>
-              </a>
+              // </a> 
             ))}
           </div>
         </div>
