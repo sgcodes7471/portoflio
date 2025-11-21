@@ -37,7 +37,12 @@ export default function ProjectDialog({ project , close }: ProjectDialogProps) {
           />
         </div>
 
-        <h2 className="text-2xl font-semibold mb-1">{project.title}</h2>
+        <div className="flex items-center justify-between">
+          <h2 className="text-2xl font-semibold mb-1">{project.title}</h2>
+          <p className="text-gray-600 text-base leading-relaxed">
+            {project.date}
+          </p>
+        </div>
         <p className="text-gray-9800 text-base leading-relaxed mb-6">
           {project.description}
         </p>

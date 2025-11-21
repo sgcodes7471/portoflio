@@ -13,7 +13,7 @@ const BgSection: React.FC = () => {
     {
     company : "Zeron", 
     date : "Dec 2025",
-    role : "Upcoming Software Engineering Intern",
+    role : "Upcoming Product Engineering Intern",
     location : "Remote",
     details : <></>
    },

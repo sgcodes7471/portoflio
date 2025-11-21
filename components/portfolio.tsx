@@ -20,16 +20,16 @@ const Portfolio = () => {
       description: "A decentralized platform for tracking energy usage and enabling peer-to-peer energy trading supporting real-time trade broadcasting, secure order matching, and privacy-preserving transactions, with verified identities using NFTs as decentralized identifiers.",
       tags: ["# blockchain", "# microcontroller", "# node", "# redis"],
       link: "https://github.com/sgcodes7471/carbon-x",
-      date : ""
+      date : "Jan 2025 - Feb 2025"
     },
     {
       title: "Dream",
       img : "/projects/dream11.png" ,
       subtitle : "Fantasy Cricket Team Recommendation System",
       description: "A platform that predicts and recommends optimal fantasy cricket teams using a Gradient Boosting Machine, provides detailed performance analysis with interactive visualizations, delivers automated email updates, and generates AI-driven commentary on matches.",
-      tags: ["# generative-ai", "# gradient-boost", "# etl", "# next.js"],
+      tags: ["# generative-ai", "# gradient-boost", "# next.js"],
       link: "https://github.com/D11-MP/Dream11-prototype",
-      date : ""
+      date : "Nov 2024 - Dec 2024"
     },
     {
       title: "Make.it",
@@ -38,7 +38,7 @@ const Portfolio = () => {
       description: "A platform that generates complete websites with structured folders using Anthropic AI, supports follow-up prompts for iterative development, includes a file explorer and drag-and-drop component management, and runs live previews in browser.",
       tags: ["# web-containers", "# fast-api", "# llms"],
       link: "https://github.com/sgcodes7471/make.it",
-      date : ""
+      date : "Sept 2025"
     },
     {
       title: "ThreeTube",
@@ -47,7 +47,7 @@ const Portfolio = () => {
       description: "A platform on ethereum chain for streaming, live broadcasting, and monetizing videos with NFT-based ownership, supporting real-time like updates, interactive viewing, and efficient indexing and querying of on-chain data for seamless user experience.",
       tags: ["# ffmpeg & hls", "# react", "# websockets"],
       link: "https://github.com/Dappers24/ThreeTube",
-      date : ""
+      date : "Oct 2024 - Nov 2024"
     },
     
     {
@@ -57,7 +57,7 @@ const Portfolio = () => {
       description: "A database management system supporting efficient data storage and retrieval with a B+ Tree index, providing insertion, deletion, modification, and search operations, and simulating persistent storage by mapping records to external files.",
       tags: ["# dbms", "# b+ trees", "# oops" , "# c++"],
       link: "https://github.com/sgcodes7471/Custom-DBMS",
-      date : ""
+      date : "Aug 2025"
     },
     {
       title: "Admin Panel",
@@ -66,7 +66,7 @@ const Portfolio = () => {
       description: "An NPM package that enables the creation of fully functional admin panels for student web committee projects with a single setup, streamlining project management and interface generation.",
       tags: ["# npm-package", "# swc"],
       link: "https://github.com/swciitg/swc_admin_panel",
-      date : ""
+      date : "Present"
     }
   ];
 
@@ -109,7 +109,7 @@ const Portfolio = () => {
           </p> 
 
           <p className="text-lg md:text-xl text-gray-600 tracking-widest uppercase">
-            Software Engineering, Web2/Web3, Artificial Intelligence, Automated Programming, Open Source Contributions
+            Software Engineering, Web2/Web3, Artificial Intelligence
           </p>
            
           <Connect/>
@@ -174,7 +174,7 @@ const Portfolio = () => {
             target="_blank"
             className="text-4xl font-black hover:underline hover:text-gray-800 transition"
           >
-            GitHub
+            Here
           </Link>
         </div>
       </section>
@@ -193,22 +193,22 @@ const Portfolio = () => {
             
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-normal leading-tight">
-                Thanks for stopping by.
+                Thanks for visiting.
               </h2>
               <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-                Feel free to reach me through any channel.
+                You can reach out to me through any preferred platform.
               </p>
               <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-                I'm excited to connect with you all.
+                I look forward to connecting with you.
               </p>
               <p className="text-xl md:text-2xl text-gray-700 leading-relaxed pt-8">
-                If you have a project and desire to collaborate with me,{' '}
+                If you’re working on something and want to collaborate with me,{' '}
                 <span className="underline font-medium">
                   <a 
                   href="mailto:official06srinjoy@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer">
-                    I'd love to hear from you
+                     I’d be happy to discuss it.
                   </a>
                 </span>.
               </p>
