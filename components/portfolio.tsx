@@ -104,12 +104,12 @@ const Portfolio = () => {
             {' • '}
             Learning {' '}
             <span className='font-semibold'>
-              Rust & Solana
+              Rust & Systems Programming 
             </span>
           </p> 
 
           <p className="text-lg md:text-xl text-gray-600 tracking-widest uppercase">
-            Software Engineering, Web2/Web3, Artificial Intelligence
+            Software Engineering, Web2/Web3, AI Automation
           </p>
            
           <Connect/>
