@@ -103,7 +103,7 @@ const Portfolio = () => {
             {' • '}
             Learning {' '}
             <span className='font-semibold'>
-              Rust & System Programming
+              Rust & Systems Programming 
             </span>
           </p> 
 
