@@ -13,7 +13,7 @@ const BgSection: React.FC = () => {
     {
     company : "Zeron", 
     date : "Dec 2025",
-    role : "Upcoming Product Engineering Intern",
+    role : "Software Engineering Intern",
     location : "Remote",
     details : <></>
    },
@@ -29,14 +29,14 @@ const BgSection: React.FC = () => {
     date : "May 2025 - Jun 2025",
     role : "Full Stack Developer Intern",
     location : "Remote",
-    details : <>Worked with <b className = "text-red-500">Next.js</b>, <b className = "text-red-500">Python</b> and <b className = "text-red-500">Supabase</b> to make AI Advertisement products</>
+    details : <>Worked with <b className = "text-red-500">Next.js</b>, <b className = "text-red-500">Python</b> and <b className = "text-red-500">LLMs</b> to make AI Advertisement products pipelines</>
    },
    {
     company : "Hacktoberfest", 
     date : "Oct 2025",
     role : "Open Source Contributor",
     location : "Remote",
-    details : <>Contributed using <b className = "text-red-500">JavaScript</b>, to build LLM-based content moderation system and a serverless realtime chat feature</>
+    details : <>Contributed using <b className = "text-red-500">JavaScript</b> and <b className = "text-red-500">Supabase</b>, to build content moderation system and a serverless realtime chat feature</>
    }
   ];
 

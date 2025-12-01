@@ -18,7 +18,7 @@ const Portfolio = () => {
       img : "/projects/carbon.png" ,
       subtitle : "Decentralized Energy Trading Platform",
       description: "A decentralized platform for tracking energy usage and enabling peer-to-peer energy trading supporting real-time trade broadcasting, secure order matching, and privacy-preserving transactions, with verified identities using NFTs as decentralized identifiers.",
-      tags: ["# blockchain", "# microcontroller", "# node", "# redis"],
+      tags: ["# web3.js", "# microcontroller", "# node", "# redis"],
       link: "https://github.com/sgcodes7471/carbon-x",
       date : "Jan 2025 - Feb 2025"
     },
@@ -35,10 +35,10 @@ const Portfolio = () => {
       title: "Make.it",
       img : "/projects/make.png" ,
       subtitle : "AI-based Website Builder",
-      description: "A platform that generates complete websites with structured folders using Anthropic AI, supports follow-up prompts for iterative development, includes a file explorer and drag-and-drop component management, and runs live previews in browser.",
+      description: "A platform that generates complete websites with structured folders using Gemini AI, supports follow-up prompts for iterative development with GitHub OAuth, includes a file explorer and Zip-file downloads, and runs live previews in browser.",
       tags: ["# web-containers", "# fast-api", "# llms"],
       link: "https://github.com/sgcodes7471/make.it",
-      date : "Sept 2025"
+      date : "Nov 2025 - Ongoing"
     },
     {
       title: "ThreeTube",
@@ -49,7 +49,6 @@ const Portfolio = () => {
       link: "https://github.com/Dappers24/ThreeTube",
       date : "Oct 2024 - Nov 2024"
     },
-    
     {
       title: "Custom Database",
       img : "/projects/db.png" ,
@@ -104,12 +103,12 @@ const Portfolio = () => {
             {' • '}
             Learning {' '}
             <span className='font-semibold'>
-              Rust & Solana
+              Rust & System Programming
             </span>
           </p> 
 
           <p className="text-lg md:text-xl text-gray-600 tracking-widest uppercase">
-            Software Engineering, Web2/Web3, Artificial Intelligence
+            Software Engineering, Web2, AI Automation, Open Source Contributions
           </p>
            
           <Connect/>
