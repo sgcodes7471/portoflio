@@ -36,7 +36,7 @@ const Portfolio = () => {
       img : "/projects/make.png" ,
       subtitle : "AI-based Website Builder",
       description: "A platform that generates complete websites with structured folders using Gemini AI, supports follow-up prompts for iterative development with GitHub OAuth, includes a file explorer and Zip-file downloads, and runs live previews in browser.",
-      tags: ["# web-containers", "# fast-api", "# llms"],
+      tags: ["# web-containers", "# fast-api", "# parsing"],
       link: "https://github.com/sgcodes7471/make.it",
       date : "Nov 2025 - Ongoing"
     },
