@@ -12,32 +12,32 @@ const BgSection: React.FC = () => {
   const works: Skill[] = [
     {
     company : "Zeron", 
-    date : "Dec 2025",
-    role : "Software Engineering Intern",
+    date : "Present",
+    role : "Engineering Intern",
     location : "Remote",
-    details : <></>
+    details : <>Researching to design Taxanomy, generating <b className="text-red-500">Synthetic Datasets</b>, and building and implementation of Quantitative Models for <b className="text-red-500">Cyber-Exploitations detection</b></>
    },
    {
-    company : "Indian Institute of Technology", 
-    date : "July 2023 - Present",
-    role : "Engineering Undergraduate",
-    location : "Guwahati, India",
-    details : <>Took key <b className="text-red-500">Computer Sciences</b> courses of Data Structures, Networks and Database Management Systems while having a major in Chemistry</>
+     company : "Hacktoberfest", 
+     date : "Oct 2025",
+     role : "Open Source Contributor",
+     location : "Remote",
+     details : <>Contributed using <b className = "text-red-500">JavaScript</b> and <b className = "text-red-500">Supabase</b> to build content moderation system and a serverless realtime chat feature</>
    },
    {
-    company : "Zeroes Research Labs(AdVise)", 
-    date : "May 2025 - Jun 2025",
-    role : "Frontend Developer Intern",
-    location : "Remote",
-    details : <>Worked with <b className = "text-red-500">Next.js</b>, <b className = "text-red-500">LLMs</b> and <b className = "text-red-500">AWS</b> to make AI Advertisement pipelines and Dashboards</>
-   },
-   {
-    company : "Hacktoberfest", 
-    date : "Oct 2025",
-    role : "Open Source Contributor",
-    location : "Remote",
-    details : <>Contributed using <b className = "text-red-500">JavaScript</b> and <b className = "text-red-500">Supabase</b> to build content moderation system and a serverless realtime chat feature</>
-   }
+     company : "Zeroes Research Labs", 
+     date : "May 2025 - Jun 2025",
+     role : "Full-Stack Developer Intern",
+     location : "Remote",
+     details : <>Worked with <b className = "text-red-500">Next.js</b> and <b className = "text-red-500">LLMs</b> to make AI Advertisement pipelines and Dashboards</>
+    },
+    {
+     company : "Indian Institute of Technology", 
+     date : "July 2023 - Present",
+     role : "Engineering Undergraduate",
+     location : "Guwahati, India",
+     details : <>Took key <b className="text-red-500">Computer Sciences</b> courses of Data Structures, Networks and Database Management Systems while having a major in Chemistry</>
+    }
   ];
 
   const [openedSection , setOpenedSection] = useState(-1);
