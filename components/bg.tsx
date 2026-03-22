@@ -12,7 +12,7 @@ const BgSection: React.FC = () => {
   const works: Skill[] = [
     {
     company : "Zeron", 
-    date : "Present",
+    date : "Dec 2025",
     role : "Engineering Intern",
     location : "Remote",
     details : <>Researching to design Taxanomy, generating <b className="text-red-500">Synthetic Datasets</b>, and building and implementation of Quantitative Models for <b className="text-red-500">Cyber-Exploitations detection</b></>
