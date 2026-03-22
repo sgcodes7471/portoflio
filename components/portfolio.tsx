@@ -101,9 +101,9 @@ const Portfolio = () => {
               Kolkata, India
             </span>
             {' • '}
-            Learning {' '}
+            Working with {' '}
             <span className='font-semibold'>
-              Rust & Systems Programming 
+              Go & Systems 
             </span>
           </p> 
 
