@@ -60,7 +60,7 @@ const Portfolio = () => {
     },
     {
       title: "College Cupid",
-      img : "/projects/admin.png" ,
+      img : "/projects/cupid.webp" ,
       subtitle : "A Dating Platform for College Campus students",
       description: "A Dating platform with diffie-hellman algorithm for maintaining matches, a completely anonymous confessions system and blind speed dating feature using websockets delivered in a mobile application built on Flutter - catering 800+ users",
       tags: ["# websockets", "# mobile-app"],
