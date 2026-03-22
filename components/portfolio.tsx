@@ -59,13 +59,13 @@ const Portfolio = () => {
       date : "Aug 2025"
     },
     {
-      title: "Admin Panel",
+      title: "College Cupid",
       img : "/projects/admin.png" ,
-      subtitle : "Generic Admin Panel Generating Package",
-      description: "An NPM package that enables the creation of fully functional admin panels for student web committee projects with a single setup, streamlining project management and interface generation.",
-      tags: ["# npm-package", "# swc"],
-      link: "https://github.com/swciitg/swc_admin_panel",
-      date : "Present"
+      subtitle : "A Dating Platform for College Campus students",
+      description: "A Dating platform with diffie-hellman algorithm for maintaining matches, a completely anonymous confessions system and blind speed dating feature using websockets delivered in a mobile application built on Flutter - catering 800+ users",
+      tags: ["# websockets", "# mobile-app"],
+      link: "https://github.com/swciitg/college_cupid_backend",
+      date : "Jan 2026 - Feb 2026"
     }
   ];
 
